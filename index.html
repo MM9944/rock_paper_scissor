@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <script>
+        console.log("hi");
+
+        const options = ["rock", "paper", "scissors"];
+
+        function getComputerChoice(){
+            const choice = options[Math.floor(Math.random() * options.length)]
+            return choice; 
+
+        }
+
+        function chekWinner(playerSelection, computerSelection){
+            if(playerSelection == computerSelection);
+                return "Tie";
+            }
+            else if(
+                (playerSelection == "rock" && computerSelection == "scissors") ||
+                (playerSelection == "scissors" && computerSelection == "paper") ||
+                (playerSelection == "paper" && computerSelection == "rock")  
+            ){
+                return "Player";
+            }
+            else {
+                return "Computer";
+                
+            }
+
+            
+        
+
+
+        function playRound(playerSelection, computerSelection){
+
+        }
+
+        getComputerChoice();
+
+       
+
+       
+
+    </script>
+    
+</body>
+</html>
